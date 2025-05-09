@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Places to visit in Ooty" content="width=device-width, initial-scale=1.0">
+    <title>Hidden places in Ooty</title>
+    <link rel="icon" href="middleclass wanderer logo.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Playfair+Display:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #fdfdfd;
+            color: #333;
+            <body id="top">
+
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            background-color: #fff;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+        }
+
+        .brand-container {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .logo {
+            height: 80px;
+            transition: transform 0.3s;
+        }
+
+        .tagline {
+            color: #e67e22;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            font-weight: 500;
+            font-style: italic;
+            letter-spacing: 0.8px;
+            position: relative;
+            padding-left: 30px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .tagline::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 70%;
+            width: 3px;
+            background: linear-gradient(to bottom, #f39c12, #e74c3c);
+            border-radius: 3px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 35px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 10px 0;
+            position: relative;
+            transition: all 0.3s;
+        }
+
+        .main-heading {
+            text-align: center;
+            padding: 60px 5% 30px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+        }
+
+        .main-heading h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.2rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            letter-spacing: -0.5px;
+        }
+
+        .main-heading .subtitle {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .main-heading .decorative-line {
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(to right, #f39c12, #e74c3c);
+            margin: 25px auto;
+            border-radius: 2px;
+        }
+
+        /* Section for places */
+        .place-section {
+            padding: 60px 5%;
+            background-color: #fafafa;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .place-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .place-content.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .place-image img {
+            max-width: 400px;
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .place-text {
+            flex: 1;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .place-text h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: #e67e22;
+            margin-bottom: 15px;
+        }
+
+        .place-text p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+        .place-section {
+    padding: 60px 5%;
+    display: flex;
+    justify-content: center;
+    background-color: #fdfdfd;
+    border-bottom: 1px solid #eee;
+}
+
+.place-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.place-text {
+    flex: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.8;
+}
+
+.place-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.place-image {
+    flex: 1;
+}
+
+.place-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.place-image img:hover {
+    transform: scale(1.03);
+}
+
+.reverse .place-text {
+    order: 1;
+}
+
+.reverse .place-image {
+    order: 2;
+}
+.place-section {
+    padding: 60px 5%;
+    background-color: #fdfdfd;
+    border-bottom: 1px solid #eee;
+}
+
+.place-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.place-image {
+    flex: 1;
+    max-width: 500px;
+}
+
+.place-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.place-text {
+    flex: 1;
+}
+
+.place-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.place-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* Alternate layout: image right, text left */
+.place-content.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .place-content {
+        flex-direction: column;
+    }
+    .place-image, .place-text {
+        max-width: 100%;
+    }
+}
+.place-image.small img {
+    width: 85%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+}
+.place-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 5%;
+    gap: 40px;
+    flex-wrap: wrap;
+    background-color: #fdfdfd;
+}
+
+.place-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.place-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.place-image img {
+    width: 100%;
+    height: auto;
+    max-width: 380px; /* Reduced from 500px to 380px */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+}
+
+.place-text {
+    flex: 1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.place-text h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.place-text p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 15px;
+}
+.place-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 5%;
+    gap: 40px;
+    flex-wrap: wrap;
+    background-color: #fdfdfd;
+}
+
+.place-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.place-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.place-image img {
+    width: 100%;
+    height: auto;
+    max-width: 450px; /* Increased size */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+}
+
+.place-text {
+    flex: 1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.place-text h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.place-text p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 15px;
+}
+.closing-section {
+    background: linear-gradient(to right, #f5f7fa, #dfe9f3);
+    text-align: center;
+    padding: 60px 5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.closing-section h2 {
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.closing-section p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 10px auto;
+    line-height: 1.8;
+}
+
+.closing-section {
+    padding: 60px 5% 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.closing-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.closing-section p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto 10px;
+}
+
+.closing-section a {
+    color: #e67e22;
+    text-decoration: none;
+}
+.back-to-top {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #e67e22;
+    color: white;
+    padding: 10px 16px;
+    font-size: 16px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.back-to-top:hover {
+    background-color: #d35400;
+}
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="brand-container">
+            <img src="middleclass wanderer logo.jpg" alt="MiddleClass Wanderer Logo" class="logo">
+            <p class="tagline">Discover Hidden Gems Without Breaking the Bank</p>
+        </div>
+      <nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+
+    </header>
+
+   <section id="home" class="main-heading">
+        <h1>Top 10 Hidden Places in Ooty</h1>
+        <div class="decorative-line"></div>
+        <p class="subtitle">Explore these lesser-known treasures in the Queen of Hill Stations that most tourists completely miss</p>
+    </section>
+
+    <!-- Place 1: Sengottaraayar Malai -->
+    <section class="place-section">
+        <div class="place-content">
+            <div class="place-text">
+                <h2>1. Sengottaraayar Malai</h2>
+                <p>
+                    Tucked away in the scenic highlands of the Nilgiris, Sengottaraayar Malai is one of Ooty’s most peaceful and undiscovered viewpoints. From Coonoor, it’s about a 30 km drive to Manjakombai village, followed by a short ride to CSI Church, Kottakkal, where you can conveniently park your vehicle. The real charm begins with a 30-minute trek through lush tea estates, leading you to a tranquil hilltop with panoramic views of the Western Ghats.
+                    <br><br>
+                    Unlike the usual tourist-packed locations, Sengottaraayar Malai offers a serene atmosphere perfect for nature lovers, photographers, and anyone seeking a quiet escape. Whether it’s the morning mist or the golden hue of sunset, this spot captures the untouched beauty of Ooty in its purest form.
+                </p>
+            </div>
+            <div class="place-image">
+                <img src="Sengottaraayar Malai.jpg" alt="Sengottaraayar Malai">
+            </div>
+        </div>
+    </section>
+
+    <!-- Place 2: Uyilatti Waterfalls -->
+<section class="place-section">
+    <div class="place-content">
+        <div class="place-image">
+            <img src="Uyillati waterfalls.jpg" alt="Uyilatti Waterfalls">
+        </div>
+        <div class="place-text">
+            <h2>2. Uyilatti Waterfalls</h2>
+            <p>
+                Nestled in the serene hills of Kukkal village near Kotagiri, Uyilatti Waterfalls is a hidden gem surrounded by lush greenery, rolling hills, and scenic tea plantations. The gentle roar of the waterfall, paired with its tranquil setting, creates a peaceful microclimate that refreshes both body and mind. Visitors can take a dip in the natural pool at the base or simply enjoy the untouched beauty of the area. Free from commercialization, it remains one of the few places where you can truly connect with nature and escape the noise of city life.
+            </p>
+        </div>
+    </div>
+
+    </section>
+    <!-- Place 3: Catherine Waterfalls -->
+<section class="place-section reverse">
+    <div class="place-content">
+        <div class="place-text">
+            <h2>3. Catherine Waterfalls</h2>
+            <p>
+                Catherine Falls is a breathtaking double-cascaded waterfall located in Kotagiri, in the Nilgiris District of Tamil Nadu. Found just off the Mettupalayam road at Aravenu, it is a popular yet serene tourist destination. The waterfall tumbles down in two stages, making it the second-highest in the Nilgiris, and offering mesmerizing views of the surrounding forests and tea gardens.
+                <br><br>
+                The falls are easily accessible and provide a scenic viewpoint overlooking the Mettupalayam valley. Ideal for trekkers and nature enthusiasts, Catherine Falls offers tranquil surroundings and is especially magical during early mornings, when the mist gently veils the landscape.
+            </p>
+        </div>
+        <div class="place-image">
+            <img src="Catherine Waterfalls .jpg" alt="Catherine Waterfalls">
+        </div>
+    </div>
+</section>
+<!-- Place 4: Annamalai Temple -->
+<section class="place-section">
+    <div class="place-content">
+        <div class="place-image small">
+            <img src="annamalai temple.webp" alt="Annamalai Murugan Temple">
+        </div>
+        <div class="place-text">
+            <h2>4. Annamalai Temple</h2>
+            <p>
+                Annamalai Murugan Temple, located about 35 km from Ooty in the quiet village of Manjoor, is a peaceful and lesser-known spiritual spot. Set on a hilltop, the temple offers stunning views of the surrounding Nilgiri mountains and the beautiful Kundha Dam, making it a perfect escape for both spiritual seekers and nature lovers.
+            </p>
+            <p>
+                A short 5–10 minute trek through the nearby forest leads to a small hidden shrine, adding a sense of adventure to the visit. With its scenic setting and calm atmosphere, Annamalai Temple is an underrated gem that blends spirituality and natural beauty.
+            </p>
+        </div>
+    </div>
+</section>
+<!-- Place 5: Tiger Hill Cemetery -->
+<section class="place-section">
+    <div class="place-content">
+        <div class="place-text">
+            <h2>5. Tiger Hill Cemetery</h2>
+            <p>
+                Tiger Hill Cemetery is one of the most offbeat and photo-worthy spots in Ooty. Tucked in a quiet corner of the hills, this colonial-era graveyard gives off an eerie, haunted-movie vibe — perfect for those who love a bit of mystery.
+            </p>
+            <p>
+                Just 200 meters from the cemetery gate is a viewpoint that offers a magical glimpse of Mettupalayam below. Misty clouds often pass through the hills, creating a surreal scene ideal for photography or a peaceful escape from the crowd.
+            </p>
+        </div>
+        <div class="place-image">
+            <img src="Tiger Hill cementary .jpg" alt="Tiger Hill Cemetery Viewpoint">
+        </div>
+    </div>
+</section>
+<section class="place-section reverse">
+    <div class="place-image">
+        <img src="kinnakorai road.webp" alt="Kinnakorai Village">
+    </div>
+    <div class="place-text">
+        <h2>6. Kinnakorai Village – Misty Hills & Enchanting Roads</h2>
+        <p>
+            Kinnakorai is a picturesque hamlet tucked deep within the misty folds of the Nilgiris, just about 60 km from Ooty.
+            Though it’s one of the last villages on the edge of the district, it’s often overlooked by tourists — making it a peaceful and pristine escape.
+        </p>
+        <p>
+            The journey to Kinnakorai is nothing short of magical. You’ll drive through narrow, winding roads flanked by tall trees, thick forests,
+            and rolling tea estates. The road feels like a scene from a dream, especially when the mist descends and wraps everything in white.
+            Midway, you’ll catch stunning views of the Emerald Lake — a bonus for road trip lovers and photographers alike.
+        </p>
+    </div>
+</section>
+<section class="place-section">
+    <div class="place-text">
+        <h2>7. Kinnakorai Viewpoint – A Window to Kerala</h2>
+        <p>
+            Located at the edge of the Nilgiris, the Kinnakorai Viewpoint offers a spectacular view that stretches into the neighboring state of Kerala.
+            This remote viewpoint is part of the final village of the Ooty region, making it a unique geographical spot.
+        </p>
+        <p>
+            What sets this viewpoint apart is its dramatic elevation and peaceful setting. On clear days, you can see the lush valleys and distant hills of Kerala.
+            It’s a perfect escape for those who enjoy scenic beauty without the tourist rush — ideal for quiet reflection, photography, or just soaking in nature.
+        </p>
+    </div>
+    <div class="place-image">
+        <img src="Kinnakorai view point.jpg" alt="Kinnakorai Viewpoint">
+    </div>
+</section>
+<section class="place-section reverse">
+    <div class="place-image">
+        <img src="Echo rock coonor.jpg" alt="Echo Rocks Viewpoint">
+    </div>
+    <div class="place-text">
+        <h2>8. Echo Rocks – Nature’s Early Morning Concert</h2>
+        <p>
+            Tucked away inside a reserve forest near Huligal, Echo Rocks is one of the most thrilling offbeat spots near Coonoor.
+            Just 11 km from the Coonoor Bus Stand, the trail begins through scenic tea estates and dense forest paths. On the way,
+            you might even spot elephant tracks – a reminder of the untouched wilderness around you.
+        </p>
+        <p>
+            The short 15-minute trek leads you to a breathtaking viewpoint. If you arrive early, you’ll witness a magical sunrise,
+            with clouds floating below your feet and golden rays lighting up the horizon. The calmness of the morning, broken only
+            by the chirping of birds and your own echo, makes it an unforgettable experience for trekkers and nature lovers alike.
+        </p>
+    </div>
+</section>
+<section class="place-section right-image">
+    <div class="place-text">
+        <h2>9. Dolphin’s Nose</h2>
+        <p>Nestled at around 6,600 feet above sea level, Dolphin’s Nose is one of the most captivating viewpoints near Coonoor. Named after the rock formation that strikingly resembles a dolphin’s nose, this location offers a panoramic view of the rolling Nilgiri hills and the lush green tea estates blanketing them.</p>
+        <p>The short 3 km trek to the viewpoint is a rewarding experience in itself, passing through misty pine forests and occasional waterfalls. From the top, you can spot deep valleys, distant hill ranges, and even feel the magic of the echo point nearby. It’s the perfect place to unwind and soak in the charm of Ooty’s nature.</p>
+    </div>
+    <div class="place-image">
+        <img src="Dolphin Nose.jpg" alt="Dolphin’s Nose Viewpoint">
+    </div>
+</section>
+<section class="place-section">
+    <div class="place-image">
+        <img src="Marlimund Lake.jpg" alt="Ooty to Marlimund Lake">
+    </div>
+    <div class="place-text">
+        <h2>10. Ooty to Marlimund Lake – A Walk Through the Nilgiris</h2>
+        <p>
+            Just a few kilometers from the heart of Ooty, the walk to Marlimund Lake offers a refreshing escape from the town’s busy streets.
+            Starting from the higher slopes of Ooty, this peaceful 6 km trail winds through vibrant neighborhoods and gradually transitions
+            into quieter stretches of hillside roads.
+        </p>
+        <p>
+            As you walk along Snowdon Road, the chaos of city life fades behind you, replaced by cool breezes, colorful hillside houses, and glimpses of nature.
+            At the end of the walk, Marlimund Lake greets you with its calm waters, surrounded by trees and hills – perfect for a peaceful break, reflection, or scenic photography.
+        </p>
+    </div>
+</section>
+
+<section class="closing-section">
+    <h2>Thank You for Exploring!</h2>
+    <p>
+      Whether you're a weekend traveler or a curious wanderer, we hope this guide helps you uncover the hidden gems of Ooty.
+      Pack your bags, bring your camera, and start exploring the unexplored!
+    </p>
+    
+  </section>
+  
+<!-- About Section -->
+<section id="about" class="closing-section">
+  <h2>About MiddleClass Wanderer</h2>
+  <p>
+    I'm just an ordinary traveler with a passion for discovering the extraordinary. MiddleClass Wanderer is my way of sharing the hidden gems of South India—places untouched by the crowd, rich in nature, and light on the wallet.
+  </p>
+  <p>
+    Whether it's a mist-covered trail, a forgotten viewpoint, or a quiet village road, I believe travel isn't about luxury—it's about the story, the simplicity, and the people you meet along the way.
+  </p>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="closing-section">
+  <h2>Get in Touch</h2>
+  <p>Email me: <a href="mailto:middleclasswanderer43@gmail.com">middleclasswanderer43@gmail.com</a></p>
+  <p>I'd love to hear your travel stories or help you plan your offbeat escape!</p>
+</section>
+
+<a href="#home" class="back-to-top">↑ Back to Top</a>
+
+<script>
+    // Show/hide back-to-top button on scroll
+    window.addEventListener('scroll', function() {
+        const backToTop = document.getElementById('backToTop');
+        if (window.scrollY > 400) {
+            backToTop.style.display = 'block';
+        } else {
+            backToTop.style.display = 'none';
+        }
+    });
+</script>
+<a href="#home" class="back-to-top" id="backToTop">↑ Back to Top</a>
+
+
+</body>
+</html>
